@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1213.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.withscenebuilder.Signup">
+    <children>
+        <ImageView fx:id="background" fitHeight="918.0" fitWidth="1316.0" layoutX="-4.0" layoutY="-91.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Desktop/CastleIMGS/BACKGROUND3.jpg" />
+            </image></ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="715.0" layoutX="337.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: rgba(255,255,255,.6); -fx-arc-height: 60; -fx-arc-width: 60;" width="540.0" />
+        <ImageView fx:id="logo" fitHeight="74.0" fitWidth="97.0" layoutX="558.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/CastleLogo.png" />
+            </image></ImageView>
+        <TextField fx:id="usernameTF" layoutX="574.0" layoutY="360.0" prefHeight="38.0" prefWidth="267.0" promptText="USERNAME">
+            <font>
+                <Font name="Century Gothic Bold" size="14.0" />
+            </font>
+        </TextField>
+        <ImageView fx:id="user" fitHeight="38.0" fitWidth="41.0" layoutX="370.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Desktop/CastleIMGS/user.png" />
+            </image></ImageView>
+        <ImageView fx:id="lock" fitHeight="37.0" fitWidth="37.0" layoutX="372.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/locked-computer.png" />
+            </image></ImageView>
+        <Button fx:id="signupButton" layoutX="534.0" layoutY="681.0" mnemonicParsing="false" onAction="#signup" prefHeight="51.0" prefWidth="148.0" style="-fx-background-color: #05092d; -fx-background-radius: 20;" text="SIGN UP" textFill="#e2e2e2">
+            <font>
+                <Font name="Century Gothic Bold" size="19.0" />
+            </font>
+        </Button>
+        <Button fx:id="backButton" layoutX="362.0" layoutY="69.0" mnemonicParsing="false" onAction="#SwitchToScene1" prefHeight="65.0" prefWidth="73.0" style="-fx-background-color: rgba(255,255,255,.0);">
+         <graphic>
+                <ImageView fx:id="back" fitHeight="57.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../../../Downloads/back21.png" />
+                    </image>
+                </ImageView>
+         </graphic>
+        </Button>
+        <PasswordField fx:id="passwordTF" layoutX="574.0" layoutY="414.0" prefHeight="38.0" prefWidth="267.0" promptText="PASSWORD">
+            <font>
+                <Font name="Century Gothic Bold" size="14.0" />
+            </font>
+        </PasswordField>
+      <Label layoutX="546.0" layoutY="176.0" text="SIGN UP" textFill="#05092d">
+         <font>
+            <Font name="Century Gothic Bold" size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTF" layoutX="574.0" layoutY="307.0" prefHeight="38.0" prefWidth="267.0" promptText="EMAIL">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password2TF" layoutX="574.0" layoutY="465.0" prefHeight="38.0" prefWidth="267.0" promptText="PASSWORD AGAIN">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </PasswordField>
+      <ImageView fx:id="lock2" fitHeight="37.0" fitWidth="37.0" layoutX="371.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Downloads/locked-computer.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="phoneTF" layoutX="574.0" layoutY="515.0" prefHeight="38.0" prefWidth="267.0" promptText="PHONE NUMBER">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="birthdateTF" cache="true" layoutX="574.0" layoutY="566.0" prefHeight="39.0" prefWidth="267.0" promptText="BIRTHDATE" style="-fx-background-color: #fff; -fx-font-size: 14;" />
+      <TextField fx:id="fullNameTF" layoutX="574.0" layoutY="258.0" prefHeight="38.0" prefWidth="267.0" promptText="NAME">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="425.0" layoutY="266.0" text="FULL NAME" textFill="#05092d">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="name" fitHeight="39.0" fitWidth="52.0" layoutX="370.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/CastleIMGS/name2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="425.0" layoutY="368.0" text="USERNAME" textFill="#05092d">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="315.0" text="EMAIL" textFill="#05092d">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="422.0" text="PASSWORD" textFill="#05092d">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="473.0" text="PASSWORD" textFill="#05092d">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="523.0" text="PHONE NUMBER" textFill="#05092d">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="575.0" text="BIRTHDATE" textFill="#05092d">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="628.0" text="GENDER" textFill="#05092d">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="email" fitHeight="32.0" fitWidth="32.0" layoutX="374.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/CastleIMGS/email.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="phone" fitHeight="32.0" fitWidth="32.0" layoutX="375.0" layoutY="518.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/CastleIMGS/phone.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="birthdate" fitHeight="32.0" fitWidth="37.0" layoutX="374.0" layoutY="570.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/CastleIMGS/birthdate.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gender" fitHeight="32.0" fitWidth="37.0" layoutX="373.0" layoutY="623.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/CastleIMGS/gender.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="maleTF" layoutX="574.0" layoutY="627.0" mnemonicParsing="false" text="MALE" textFill="#05092d">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="genderGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="femaleTF" layoutX="708.0" layoutY="628.0" mnemonicParsing="false" text="FEMALE" textFill="#05092d" toggleGroup="$genderGroup">
+         <font>
+            <Font name="Century Gothic Bold" size="17.0" />
+         </font>
+      </RadioButton>
+    </children>
+</AnchorPane>

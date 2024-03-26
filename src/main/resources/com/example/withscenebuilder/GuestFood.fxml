@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="891.0" style="-fx-background-color: #d4d4d4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.withscenebuilder.GuestFood">
+    <children>
+        <AnchorPane layoutX="-3.0" layoutY="-3.0" minHeight="0.0" minWidth="0.0" prefHeight="813.0" prefWidth="897.0">
+            <children>
+                <Label layoutX="343.0" layoutY="48.0" style="-fx-background-color: transperant;" text="ORDER FOOD" textFill="#101010">
+                    <font>
+                        <Font name="Century Gothic Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="84.0" layoutY="161.0" prefHeight="211.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-background-radius: 15; -fx-border-color: #000000;">
+                    <children>
+                        <ImageView fx:id="cocacola" fitHeight="96.0" fitWidth="151.0" layoutX="33.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../../../Desktop/CastleIMGS/coca-cola.png" />
+                            </image>
+                        </ImageView>
+                        <JFXCheckBox fx:id="colaCB" checkedColor="#a19f9f" layoutX="22.0" layoutY="114.0" text="COCACOLA">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </JFXCheckBox>
+                        <Text layoutX="17.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Label layoutX="115.0" layoutY="143.0" text="\$">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="colaPrice" alignment="CENTER_RIGHT" layoutX="54.0" layoutY="143.0" prefHeight="15.0" prefWidth="55.0" text="00">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="colaQ" layoutX="54.0" layoutY="166.0" prefHeight="34.0" prefWidth="76.0" promptText="QUANTITY">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                        <Text layoutX="17.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="33.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                            <font>
+                                <Font name="Century Gothic Bold" size="19.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <Label layoutX="81.0" layoutY="102.0" style="-fx-background-color: transperant;" text="DRINKS:">
+                    <font>
+                        <Font name="Century Gothic Bold" size="22.0" />
+                    </font>
+                </Label>
+                <Button fx:id="orderButton" layoutX="326.0" layoutY="730.0" mnemonicParsing="false" onAction="#SwitchToScene2" prefHeight="53.0" prefWidth="226.0" style="-fx-background-color: #400a84; -fx-background-radius: 15;" text="ORDER" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="24.0" />
+                    </font>
+                </Button>
+                <Pane layoutX="261.0" layoutY="161.0" prefHeight="211.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-background-radius: 15; -fx-border-color: BLACK;">
+                    <children>
+                        <ImageView fx:id="sprite" fitHeight="96.0" fitWidth="97.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../../../Desktop/CastleIMGS/sprite.png" />
+                            </image>
+                        </ImageView>
+                        <JFXCheckBox fx:id="spriteCB" checkedColor="#a19f9f" layoutX="44.0" layoutY="110.0" text="SPRITE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </JFXCheckBox>
+                        <Text layoutX="17.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Label layoutX="115.0" layoutY="143.0" text="\$">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="spritePrice" alignment="CENTER_RIGHT" layoutX="54.0" layoutY="143.0" prefHeight="15.0" prefWidth="55.0" text="00">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="spriteQ" layoutX="54.0" layoutY="166.0" prefHeight="34.0" prefWidth="76.0" promptText="QUANTITY">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                        <Text layoutX="17.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="33.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                            <font>
+                                <Font name="Century Gothic Bold" size="19.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <Pane layoutX="457.0" layoutY="161.0" prefHeight="211.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-background-radius: 15; -fx-border-color: BLACK;">
+                    <children>
+                        <ImageView fx:id="orange" fitHeight="96.0" fitWidth="97.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../../../Desktop/CastleIMGS/kabi-orange.png" />
+                            </image>
+                        </ImageView>
+                        <JFXCheckBox fx:id="orangeCB" checkedColor="#a19f9f" layoutX="18.0" layoutY="106.0" text="ORANGE JUICE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </JFXCheckBox>
+                        <Text layoutX="17.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Label layoutX="115.0" layoutY="143.0" text="\$">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="orangePrice" alignment="CENTER_RIGHT" layoutX="54.0" layoutY="143.0" prefHeight="15.0" prefWidth="55.0" text="00">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="orangeQ" layoutX="54.0" layoutY="166.0" prefHeight="34.0" prefWidth="76.0" promptText="QUANTITY">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                        <Text layoutX="17.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="33.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                            <font>
+                                <Font name="Century Gothic Bold" size="19.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <Pane layoutX="650.0" layoutY="161.0" prefHeight="211.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-background-radius: 15; -fx-border-color: BLACK;">
+                    <children>
+                        <ImageView fx:id="apple" fitHeight="96.0" fitWidth="97.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../../../Desktop/CastleIMGS/kabi-apple.png" />
+                            </image>
+                        </ImageView>
+                        <JFXCheckBox fx:id="appleCB" checkedColor="#a19f9f" layoutX="26.0" layoutY="110.0" text="APPLE JUICE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </JFXCheckBox>
+                        <Text layoutX="17.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Label layoutX="115.0" layoutY="143.0" text="\$">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="applwPrice" alignment="CENTER_RIGHT" layoutX="54.0" layoutY="143.0" prefHeight="15.0" prefWidth="55.0" text="00">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="appleQ" layoutX="54.0" layoutY="166.0" prefHeight="34.0" prefWidth="76.0" promptText="QUANTITY">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                        <Text layoutX="17.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="33.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                            <font>
+                                <Font name="Century Gothic Bold" size="19.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <Label layoutX="81.0" layoutY="408.0" style="-fx-background-color: transperant;" text="SANDWITCHES:">
+                    <font>
+                        <Font name="Century Gothic Bold" size="22.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="87.0" layoutY="470.0" prefHeight="211.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-background-radius: 15; -fx-border-color: #000000;">
+                    <children>
+                        <ImageView fx:id="shawerma" fitHeight="96.0" fitWidth="151.0" layoutX="6.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../../../Desktop/CastleIMGS/shawerma.png" />
+                            </image>
+                        </ImageView>
+                        <JFXCheckBox fx:id="shawermaCB" checkedColor="#a19f9f" layoutX="24.0" layoutY="116.0" text="SHAWERMA">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </JFXCheckBox>
+                        <Text layoutX="17.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Label layoutX="115.0" layoutY="143.0" text="\$">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="shawermaPrice" alignment="CENTER_RIGHT" layoutX="54.0" layoutY="143.0" prefHeight="15.0" prefWidth="55.0" text="00">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="shawermaQ" layoutX="54.0" layoutY="166.0" prefHeight="34.0" prefWidth="76.0" promptText="QUANTITY">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                        <Text layoutX="17.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="33.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                            <font>
+                                <Font name="Century Gothic Bold" size="19.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <Pane layoutX="268.0" layoutY="470.0" prefHeight="211.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-background-radius: 15; -fx-border-color: #000000;">
+                    <children>
+                        <ImageView fx:id="falafel" fitHeight="96.0" fitWidth="151.0" layoutX="-5.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../../../Desktop/CastleIMGS/falafel.png" />
+                            </image>
+                        </ImageView>
+                        <JFXCheckBox fx:id="flafelCB" checkedColor="#a19f9f" layoutX="35.0" layoutY="116.0" text="FALAFEL">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </JFXCheckBox>
+                        <Text layoutX="17.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Label layoutX="115.0" layoutY="143.0" text="\$">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="falafelPrice" alignment="CENTER_RIGHT" layoutX="54.0" layoutY="143.0" prefHeight="15.0" prefWidth="55.0" text="00">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="falafelQ" layoutX="54.0" layoutY="166.0" prefHeight="34.0" prefWidth="76.0" promptText="QUANTITY">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                        <Text layoutX="17.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="33.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                            <font>
+                                <Font name="Century Gothic Bold" size="19.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <Pane layoutX="457.0" layoutY="470.0" prefHeight="211.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-background-radius: 15; -fx-border-color: #000000;">
+                    <children>
+                        <ImageView fx:id="fries" fitHeight="96.0" fitWidth="151.0" layoutX="33.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../../../Desktop/CastleIMGS/fries.png" />
+                            </image>
+                        </ImageView>
+                        <JFXCheckBox fx:id="friesCB" checkedColor="#a19f9f" layoutX="48.0" layoutY="117.0" text="FRIES">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </JFXCheckBox>
+                        <Text layoutX="17.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Label layoutX="115.0" layoutY="143.0" text="\$">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="friesPrice" alignment="CENTER_RIGHT" layoutX="54.0" layoutY="143.0" prefHeight="15.0" prefWidth="55.0" text="00">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="friesQ" layoutX="54.0" layoutY="166.0" prefHeight="34.0" prefWidth="76.0" promptText="QUANTITY">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                        <Text layoutX="17.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="33.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                            <font>
+                                <Font name="Century Gothic Bold" size="19.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <Pane layoutX="650.0" layoutY="470.0" prefHeight="211.0" prefWidth="149.0" style="-fx-background-color: transparent; -fx-background-radius: 15; -fx-border-color: #000000;">
+                    <children>
+                        <ImageView fx:id="burger" fitHeight="91.0" fitWidth="137.0" layoutX="6.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../../../Desktop/CastleIMGS/burger.png" />
+                            </image>
+                        </ImageView>
+                        <JFXCheckBox fx:id="burgerCB" checkedColor="#a19f9f" layoutX="39.0" layoutY="117.0" text="BURGER">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </JFXCheckBox>
+                        <Text layoutX="17.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Label layoutX="115.0" layoutY="143.0" text="\$">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="burgerPrice" alignment="CENTER_RIGHT" layoutX="54.0" layoutY="143.0" prefHeight="15.0" prefWidth="55.0" text="00">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="burgerQ" layoutX="54.0" layoutY="166.0" prefHeight="34.0" prefWidth="76.0" promptText="QUANTITY">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </TextField>
+                        <Text layoutX="17.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                            <font>
+                                <Font name="Century Gothic Bold" size="12.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="33.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                            <font>
+                                <Font name="Century Gothic Bold" size="19.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </Pane>
+                <Button fx:id="backButton" layoutX="25.0" layoutY="15.0" mnemonicParsing="false" onAction="#SwitchToScene" prefHeight="65.0" prefWidth="73.0" style="-fx-background-color: rgba(255,255,255,.0);">
+                    <graphic>
+                        <ImageView fx:id="back" fitHeight="57.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../../../Downloads/back21.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1213.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.withscenebuilder.AdminAdd">
+    <children>
+        <SplitPane dividerPositions="0.2431167400881057" prefHeight="820.0" prefWidth="1213.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="817.0" prefWidth="254.0">
+                    <children>
+                        <VBox alignment="TOP_CENTER" layoutX="-11.0" layoutY="-3.0" prefHeight="827.0" prefWidth="309.0" style="-fx-background-color: #400a84;">
+                            <children>
+                                <ImageView fx:id="User" fitHeight="129.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../../../../../Desktop/CastleIMGS/userWhite.jpg" />
+                                    </image>
+                                    <VBox.margin>
+                                        <Insets top="60.0" />
+                                    </VBox.margin>
+                                </ImageView>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SwitchToScene" prefHeight="46.0" prefWidth="297.0" style="-fx-background-color: transparent;" text="  PROFILE" textFill="WHITE">
+                                    <VBox.margin>
+                                        <Insets top="40.0" />
+                                    </VBox.margin>
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="22.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fx:id="profile" fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../../../../../../Downloads/profile.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                                <Button fx:id="paymentsButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SwitchToScene1" prefHeight="46.0" prefWidth="297.0" style="-fx-background-color: transperent;" text="  PAYMENTS" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="22.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fx:id="orders" fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../../../../../../Downloads/List.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                                <Button fx:id="ordersButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SwitchToScene2" prefHeight="46.0" prefWidth="297.0" style="-fx-background-color: transperent;" text="  ORDERS" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="22.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fx:id="orders1" fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../../../../../../Downloads/List.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="46.0" prefWidth="297.0" style="-fx-background-color: #600fc6;" text="  ADD ADMIN" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="22.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fx:id="add" fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../../../../../../Desktop/CastleIMGS/add.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                                <Button fx:id="logoutButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SwitchToScene3" prefHeight="46.0" prefWidth="297.0" style="-fx-background-color: transperent;" text="  SIGN OUT" textFill="WHITE">
+                                    <font>
+                                        <Font name="Century Gothic Bold" size="22.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fx:id="logOut" fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../../../../../../Desktop/CastleIMGS/logout.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <VBox.margin>
+                                        <Insets top="370.0" />
+                                    </VBox.margin>
+                                    <padding>
+                                        <Insets left="30.0" />
+                                    </padding>
+                                </Button>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="817.0" prefWidth="738.0">
+                    <children>
+                        <Label layoutX="329.0" layoutY="28.0" text="ADD NEW ADMIN." textFill="#aaaaa5">
+                            <font>
+                                <Font name="Century Gothic Bold" size="30.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="93.0" layoutY="108.0" text="FULL NAME">
+                            <font>
+                                <Font name="Century Gothic Bold" size="17.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="username" layoutX="83.0" layoutY="143.0" prefHeight="53.0" prefWidth="340.0" promptText="FULL NAME" style="-fx-background-radius: 10; -fx-background-color: #DEDEDE;">
+                            <font>
+                                <Font name="Century Gothic Bold" size="17.0" />
+                            </font>
+                        </TextField>
+                        <Label layoutX="88.0" layoutY="320.0" text="PHONE NUMBER">
+                            <font>
+                                <Font name="Century Gothic Bold" size="17.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="PhoneNumber" layoutX="83.0" layoutY="355.0" prefHeight="53.0" prefWidth="340.0" promptText="PHONE NUMBER" style="-fx-background-radius: 10; -fx-background-color: #DEDEDE;">
+                            <font>
+                                <Font name="Century Gothic Bold" size="17.0" />
+                            </font>
+                        </TextField>
+                        <Label layoutX="89.0" layoutY="435.0" text="GENDER">
+                            <font>
+                                <Font name="Century Gothic Bold" size="17.0" />
+                            </font>
+                        </Label>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dedede" height="46.0" layoutX="83.0" layoutY="474.0" stroke="#dedede" strokeType="INSIDE" style="-fx-arc-height: 23; -fx-arc-width: 23;" width="153.0" />
+                        <RadioButton fx:id="rb1" layoutX="115.0" layoutY="485.0" mnemonicParsing="false" text="MALE" textFill="#797979">
+                            <font>
+                                <Font name="Century Gothic Bold" size="17.0" />
+                            </font>
+                            <toggleGroup>
+                                <ToggleGroup fx:id="GENDER" />
+                            </toggleGroup>
+                        </RadioButton>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dedede" height="46.0" layoutX="270.0" layoutY="474.0" stroke="#dedede" strokeType="INSIDE" style="-fx-arc-height: 23; -fx-arc-width: 23;" width="153.0" />
+                        <RadioButton fx:id="rb2" layoutX="301.0" layoutY="485.0" mnemonicParsing="false" text="FEMALE" textFill="#797979" toggleGroup="$GENDER">
+                            <font>
+                                <Font name="Century Gothic Bold" size="17.0" />
+                            </font>
+                        </RadioButton>
+                        <Button fx:id="UpdateButton" layoutX="83.0" layoutY="697.0" mnemonicParsing="false" onAction="#addAdmin" prefHeight="53.0" prefWidth="340.0" style="-fx-background-color: #400a84; -fx-background-radius: 10;" text="ADD ADMIN" textFill="WHITE">
+                            <font>
+                                <Font name="Century Gothic Bold" size="24.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="93.0" layoutY="214.0" text="PASSWORD">
+                            <font>
+                                <Font name="Century Gothic Bold" size="17.0" />
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="newPassword" layoutX="83.0" layoutY="250.0" prefHeight="53.0" prefWidth="340.0" promptText="NEW PASSWORD" style="-fx-background-radius: 10; -fx-background-color: #DEDEDE;">
+                            <font>
+                                <Font name="Century Gothic Bold" size="17.0" />
+                            </font>
+                        </PasswordField>
+                  <Label layoutX="93.0" layoutY="553.0" text="BIRTHDATE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="birthdateTF" cache="true" layoutX="80.0" layoutY="584.0" prefHeight="46.0" prefWidth="349.0" promptText="BIRTHDATE" style="-fx-background-color: #fff; -fx-font-size: 17;" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
